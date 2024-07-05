@@ -1,0 +1,4 @@
+*.tfvars.*
+.terraform*
+check-links.yaml
+config.s3.tfbackend
