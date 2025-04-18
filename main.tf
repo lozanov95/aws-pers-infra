@@ -83,12 +83,6 @@ resource "aws_iam_role" "name" {
   })
 }
 
-resource "aws_sns_topic_subscription" "name" {
-  topic_arn = aws_sns_topic.name.arn
-  protocol  = "email"
-  endpoint  = var.notification_email
-}
-
 resource "aws_lambda_function" "name" {
   function_name    = var.lambda_name
   role             = aws_iam_role.name.arn
@@ -104,7 +98,7 @@ resource "aws_lambda_function" "name" {
 }
 
 resource "aws_cloudwatch_event_rule" "name" {
-  name                = "daily-trigger"
+  name                = "stock-trigger"
   schedule_expression = var.event_rule_schedule_expression
 }
 

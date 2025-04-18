@@ -2,10 +2,6 @@ variable "region" {
   description = "The region of the deployment."
 }
 
-variable "notification_email" {
-  description = "The email that will receive notifications from the lambda."
-}
-
 variable "repo_name" {
   description = "The ECR repository name."
 }
