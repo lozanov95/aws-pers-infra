@@ -26,7 +26,6 @@ terraform init -backend-config="config.s3.tfbackend"
 | Variable                       | Description                                                          |
 | ------------------------------ | -------------------------------------------------------------------- |
 | region                         | The region of your deployment.                                       |
-| notification_email             | The email that will receive the subscription notification.           |
 | repo_name                      | The name of your ECR repository.                                     |
 | lambda_name                    | The name of your AWS Lambda function.                                |
 | event_rule_schedule_expression | The event rule schedule expression. Default: runs daily at 8:00 UTC. |
@@ -37,6 +36,8 @@ terraform init -backend-config="config.s3.tfbackend"
 ozoneItems:
     - "https://www.ozone.bg/product/the-page-of-your-product/"
     - "https://www.ozone.bg/product/the-page-of-your-next-product/"
+ardesItems:
+    - "https://ardes.bg/product/the-page-of-the-product/"
 ```
 
-Currently only Ozone is supported.
+Currently only Ozone and Ardes are supported.
