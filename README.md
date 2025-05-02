@@ -38,6 +38,8 @@ ozoneItems:
     - "https://www.ozone.bg/product/the-page-of-your-next-product/"
 ardesItems:
     - "https://ardes.bg/product/the-page-of-the-product/"
+ardesSearches:
+    - "https://ardes.bg/komponenti/tvardi-diskove/..."
 ```
 
 Currently only Ozone and Ardes are supported.
